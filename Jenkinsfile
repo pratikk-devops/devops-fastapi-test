@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git url:'https://github.com/pratikk-devops/devops-fastapi-test.git', branch: 'main'
+                git credentialsId: 'jenkins-github-integrate', url:'https://github.com/pratikk-devops/devops-fastapi-test.git', branch: 'main'
             }
         }
 
