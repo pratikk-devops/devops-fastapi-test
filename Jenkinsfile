@@ -10,14 +10,14 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker compose up --build -d'
+                sh 'docker compose build '
             }
         }
 
         stage('Run Container') {
             steps {
-                sh 'docker-compose down || true'
-                sh 'docker-compose up -d'
+                sh 'docker compose down || true'
+                sh 'docker compose up -d'
             }
         }
     }
