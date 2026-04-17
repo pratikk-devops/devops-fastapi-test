@@ -20,5 +20,18 @@ pipeline {
                 sh 'docker compose up -d'
             }
         }
+        stage('Test Persistence') {
+            steps {
+                script {
+                    // wait for the application to start
+                    sh 'sleep 10'
+
+                    // Call API to check the existing users
+                    sh '''
+                    curl -X GET http://localhost:8000/users
+                    '''
+                }
+            }
+        }
     }
 }
