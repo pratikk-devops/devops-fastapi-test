@@ -99,13 +99,13 @@ Stages: - Clone Repository\
 ### 🔹 Prometheus
 
 -   Scrapes metrics from `/metrics`
--   URL: http://`<EC2-IP>`{=html}:9090
+-   URL: http://`<EC2-IP>`:9090
 
 ------------------------------------------------------------------------
 
 ###  Grafana
 
--   URL: http://`<EC2-IP>`{=html}:3000
+-   URL: http://`<EC2-IP>`:3000
 -   Default login: admin / admin
 
 ------------------------------------------------------------------------
@@ -139,7 +139,7 @@ prometheus.yml ├── Jenkinsfile ├── requirements.txt ├── README
 
 ##  Testing
 
-Swagger UI: http://`<EC2-IP>`{=html}:8000/docs
+Swagger UI: http://`<EC2-IP>`:8000/docs
 
 ------------------------------------------------------------------------
 
