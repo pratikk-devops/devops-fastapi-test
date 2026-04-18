@@ -130,6 +130,7 @@ Steps: 1. Launch Ubuntu EC2 instance\
 
 ------------------------------------------------------------------------
 
+
 ## 📂 Project Structure
 
 project/ 
@@ -140,6 +141,18 @@ project/
     ├── Jenkinsfile 
     ├── requirements.txt 
     ├── README.md
+
+
+
+
+
+
+
+
+
+
+
+
 
 ------------------------------------------------------------------------
 
