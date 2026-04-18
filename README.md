@@ -133,6 +133,7 @@ Steps: 1. Launch Ubuntu EC2 instance\
 
 ## 📂 Project Structure
 
+``` bash
 project/ 
     ├── app/data/info.txt users.json
     ├── Dockerfile 
@@ -141,7 +142,7 @@ project/
     ├── Jenkinsfile 
     ├── requirements.txt 
     ├── README.md
-
+```
 
 
 
