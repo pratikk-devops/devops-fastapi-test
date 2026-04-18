@@ -87,11 +87,12 @@ Data remains intact
 
 ## 🔧 Jenkins Pipeline
 
-Stages: - Clone Repository\
+Stages: 
+- Clone Repository\
 - Build Docker Image\
 - Restart Containers\
 - Verify API
-
+- Pipeline verifies /users endpoint after restart
 ------------------------------------------------------------------------
 
 ## 📊 Monitoring Setup
