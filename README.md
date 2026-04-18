@@ -132,8 +132,14 @@ Steps: 1. Launch Ubuntu EC2 instance\
 
 ## 📂 Project Structure
 
-project/ ├── app/ ├── Dockerfile ├── docker-compose.yml ├──
-prometheus.yml ├── Jenkinsfile ├── requirements.txt ├── README.md
+project/ 
+    ├── app/data/info.txt users.json
+    ├── Dockerfile 
+    ├── docker-compose.yml
+    ├── prometheus.yml 
+    ├── Jenkinsfile 
+    ├── requirements.txt 
+    ├── README.md
 
 ------------------------------------------------------------------------
 
