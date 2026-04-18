@@ -21,13 +21,13 @@ user data using a JSON file instead of a database.
 ## ⚙️ Application Details
 
 ### 📍 API Endpoints
-
+``` bash
   Method   Endpoint   Description
   -------- ---------- -----------------------
   GET      `/`        Returns hello message
   GET      `/users`   Fetch all users
   POST     `/users`   Add new user
-
+```
 ------------------------------------------------------------------------
 
 ##  Data Storage Mechanism
