@@ -1,19 +1,19 @@
-# 🚀 DevOps Project FastAPI Application
+#  DevOps Project FastAPI Application 
 
 ------------------------------------------------------------------------
 
-## 📌 Overview
+##  Overview
 
 This project demonstrates a complete DevOps workflow for a simple
 FastAPI application. The application allows users to store and retrieve
 user data using a JSON file instead of a database.
 
-### 🎯 Objectives Covered
+###  Objectives Covered
 
 -   Dockerization
 -   Container orchestration using Docker Compose
 -   Data persistence using volumes
--   CI/CD using Jenkins
+-   Automated CI/CD using Jenkins (webhook, GitHook trigers)
 -   Monitoring using Prometheus & Grafana
 
 ------------------------------------------------------------------------
@@ -30,7 +30,7 @@ user data using a JSON file instead of a database.
 
 ------------------------------------------------------------------------
 
-## 🧠 Data Storage Mechanism
+##  Data Storage Mechanism
 
 Data is stored in: app/data/users.json
 
@@ -41,15 +41,15 @@ Data is stored in: app/data/users.json
 
 ## 🐳 Docker Setup
 
-### ▶️ Run Application
+### Run Application
 
 ``` bash
-docker-compose up --build
+docker compose up --build
 ```
 
 ------------------------------------------------------------------------
 
-### 🔑 Services
+###  Services
 
   Service      Port
   ------------ ------
@@ -59,11 +59,11 @@ docker-compose up --build
 
 ------------------------------------------------------------------------
 
-## 💾 Data Persistence (Critical Requirement)
+##  Data Persistence
 
 Docker volume: app_data:/app/app/data
 
-### ✅ Purpose
+###  Purpose
 
 Ensures `users.json` persists even after container deletion
 
@@ -75,8 +75,8 @@ Ensures `users.json` persists even after container deletion
 2.  Run:
 
 ``` bash
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 ```
 
 3.  Verify: GET /users
@@ -103,7 +103,7 @@ Stages: - Clone Repository\
 
 ------------------------------------------------------------------------
 
-### 🔹 Grafana
+###  Grafana
 
 -   URL: http://`<EC2-IP>`{=html}:3000
 -   Default login: admin / admin
@@ -113,13 +113,13 @@ Stages: - Clone Repository\
 ## ☁️ EC2 Deployment
 
 Steps: 1. Launch Ubuntu EC2 instance\
-2. Install Docker & Docker Compose\
+2. Install Docker & Docker Compose V2\
 3. Clone repository\
-4. Run docker-compose up -d
+4. Run docker compose up -d
 
 ------------------------------------------------------------------------
 
-### 🔓 Required Ports
+###  Required Ports
 
   Port   Purpose
   ------ ------------
@@ -137,7 +137,7 @@ prometheus.yml ├── Jenkinsfile ├── requirements.txt ├── README
 
 ------------------------------------------------------------------------
 
-## 🧪 Testing
+##  Testing
 
 Swagger UI: http://`<EC2-IP>`{=html}:8000/docs
 
@@ -151,7 +151,7 @@ Swagger UI: http://`<EC2-IP>`{=html}:8000/docs
 
 ------------------------------------------------------------------------
 
-# 📸 Screenshots (Proof of Work)
+#  Proof of Work
 
 1.  FastAPI running (/docs)
 2.  POST /users success
@@ -165,20 +165,10 @@ Swagger UI: http://`<EC2-IP>`{=html}:8000/docs
 
 ------------------------------------------------------------------------
 
-## 🎯 Conclusion
+##  Conclusion
 
 This project demonstrates: - Containerized deployment - Persistent
 storage without database - Automated CI/CD pipeline - Monitoring and
 observability
-
-------------------------------------------------------------------------
-
-## ✅ Final Checklist
-
--   Application runs successfully\
--   Data persists after restart\
--   Jenkins pipeline works\
--   Prometheus collects metrics\
--   Grafana visualizes metrics
 
 ------------------------------------------------------------------------
