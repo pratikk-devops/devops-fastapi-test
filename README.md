@@ -154,14 +154,15 @@ Swagger UI: http://`<EC2-IP>`:8000/docs
 #  Proof of Work
 
 1.  FastAPI running (/docs)
+ <img src="screenshots/fast-api.png" width="600"/>  
 2.  POST /users success
-3.  users.json file
-4.  Data persistence after restart
-5.  docker ps output
-6.  Jenkins success
-7.  Prometheus targets UP
-8.  Grafana dashboard
-9.  /metrics endpoint
+4.  users.json file
+5.  Data persistence after restart
+6.  docker ps output
+7.  Jenkins success
+8.  Prometheus targets UP
+9.  Grafana dashboard
+10.  /metrics endpoint
 
 ------------------------------------------------------------------------
 
